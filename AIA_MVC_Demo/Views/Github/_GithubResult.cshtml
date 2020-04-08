@@ -1,0 +1,19 @@
+﻿<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Model
+            </th>
+            <th>
+                Wartość
+            </th>
+        </tr>
+        @foreach (var property in ViewData.ModelMetadata.Properties)
+        {
+            <tr>
+                <td>@(property.PropertyName)</td>
+                <td>@Html.Display(property.PropertyName)</td>
+            </tr>
+        }
+    </thead>
+</table>

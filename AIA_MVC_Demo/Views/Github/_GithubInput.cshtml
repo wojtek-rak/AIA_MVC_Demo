@@ -1,0 +1,18 @@
+﻿@using (Html.BeginForm("Index", "Github", FormMethod.Post))
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    User Name: <input type="text" name="UserName" id="UserName" />
+                </th>
+                <th>
+                    Repository Name: <input type="text" name="RepositoryName" id="RepositoryName" />
+                </th>
+                <th>
+                    <input type="submit" value="Submit" />
+                </th>
+            </tr>
+        </thead>
+    </table>
+}

@@ -1,0 +1,13 @@
+﻿@model AIA_MVC_Demo.Models.GithubResultModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Hello World</h1>
+
+<partial name="_GithubInput" />
+
+@if (Model != null)
+{
+    @await Html.PartialAsync("_GithubResult", Model)
+}
